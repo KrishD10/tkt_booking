@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+header#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+header#main-header img {
+    width: 50px;
+    height: auto;
+}
+header#main-header button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.payment-container {
+     margin: 30px;
+    background-color: white;
+    padding: 30px;
+    max-width: 600px;
+    margin-left: 24%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.payment-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.payment-section {
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+}
+
+.payment-section:first-child {
+    border-top: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.expiry-cvv {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.expiry-cvv label {
+    flex: 1;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}

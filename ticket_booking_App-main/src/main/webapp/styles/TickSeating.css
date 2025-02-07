@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.search-box{
+    margin-right: 40%;
+}
+
+header#main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+header#main-header img {
+    width: 50px;
+    height: auto;
+}
+header#main-header button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.container {
+    
+    max-width: 999px;
+    margin: 30px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+   
+}
+
+.main-content {
+    height: 100%;
+    max-width:120%;
+    display: flex;
+    gap: 20px;
+}
+
+.movie-info {
+    
+    flex: auto;
+    background-color: #f1f1f1;
+    
+    border-radius: 8px;
+}
+
+.movie-profile {
+    max-width: 50%;
+    height: 200px;
+    background-color: #e0e0e0;
+    margin: 50px;
+    border-radius: 8px;
+    margin-left: 90px;
+    padding: 10px;
+}
+
+.seat-selection {
+    flex: 2;
+}
+
+.select-title {
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: #c8e6c9;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #81c784;
+}
+
+.seat:hover {
+    background-color: #81c784;
+}
+
+.seat.selected {
+    background-color: #388e3c;
+    color: white;
+}
+
+.row-label {
+    grid-column: 1 / span 17;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment-section {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.payment-section button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+}
+
+.payment-section button:hover {
+    background-color: #e53935;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+} 
