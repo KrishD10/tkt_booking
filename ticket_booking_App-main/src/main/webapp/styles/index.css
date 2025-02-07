@@ -1,20 +1,22 @@
+/* General Layout */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);  /* Soft gradient background */
 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Header Styling */
 #main-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    background-color: #222;
+    background-color: #222;  /* Dark background */
     color: white;
 }
 
@@ -25,19 +27,19 @@ body {
     padding: 5px;
 }
 
+/* Auth Buttons */
 .auth-buttons button {
     padding: 10px 15px;
     margin-left: 10px;
     border: none;
-    background: white;
+    background-color: white;
     color: black;
     cursor: pointer;
-    transition: background 0.3s;
     border-radius: 5px;
+    transition: background-color 0.3s ease;  /* Smooth background transition */
 }
 
-
-
+/* Main Content Container */
 .container {
     display: flex;
     justify-content: center;
@@ -46,13 +48,14 @@ body {
     padding: 20px;
 }
 
+/* Sign-in Form */
 .signin-form {
     width: 100%;
     max-width: 350px;
     padding: 20px;
     border-radius: 8px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
 }
 
 .signin-form h2 {
@@ -79,48 +82,50 @@ body {
     width: 100%;
     padding: 10px;
     border: none;
-    background: black;
+    background-color: black;
     color: white;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
-    transition: background 0.3s;
+    transition: background-color 0.3s ease;  /* Smooth background transition */
 }
 
+/* Forgot Password Link */
 .forgot-password {
     display: block;
     text-align: center;
     color: black;
-    text-decoration: none;
     font-size: 14px;
     margin-bottom: 15px;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .forgot-password:hover {
-    color: #e65b4f;
+    color: #e65b4f;  /* Hover effect color */
     text-decoration: underline;
 }
 
-
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #222;
     color: white;
     font-size: 14px;
-} 
+}
 
+/* Mobile Responsiveness */
 @media (max-width: 600px) {
     #main-header {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .auth-buttons {
         margin-top: 10px;
     }
-    
+
     .signup-form {
         width: 90%;
     }
